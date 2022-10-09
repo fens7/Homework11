@@ -25,9 +25,13 @@ yearInput.oninput = () => {
 };
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();        
-    console.log(`Card Holder: ${cardHolderInput.value.toUpperCase()},
-Holders Card Number: ${cardNumberInput.value},
-Card Expires: ${monthInput.value}.${yearInput.value},
-CVV: ${cvv.value}`);
+    e.preventDefault();
+    const values = {
+        'Card Holder': cardHolderInput.value.toUpperCase(),
+        'Holders Card Number': cardNumberInput.value,
+        'Card Expires': monthInput.value + '.' +yearInput.value,
+        'CVV': cvv.value
+    }
+
+    console.log(values);
 });
