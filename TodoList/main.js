@@ -1,6 +1,4 @@
 function Tasks(input, todosWrapper) {
-    this.complete = 'js--complete';
-    this.remove = 'js--delete';
     this.input = document.querySelector(input);
     this.todosWrapper = document.querySelector(todosWrapper);
     this.addTask = (event) => {
@@ -10,11 +8,11 @@ function Tasks(input, todosWrapper) {
         const item = this.renderTemplate(value);
         this.todosWrapper.insertAdjacentHTML('afterbegin', item);
 
-        document.querySelectorAll(`.${this.complete}`).forEach((checkboxItem) => {
+        document.querySelectorAll('.js--complete').forEach((checkboxItem) => {
             checkboxItem.addEventListener('click', this.completeTask);
         });
 
-        document.querySelectorAll(`.${this.remove}`).forEach((removeItem) => {
+        document.querySelectorAll('.js--delete').forEach((removeItem) => {
             removeItem.addEventListener('click', this.removeTask);
         });
     };
