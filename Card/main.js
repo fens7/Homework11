@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
     const values = {
         'Card Holder': cardHolderInput.value.toUpperCase(),
         'Holders Card Number': cardNumberInput.value,
-        'Card Expires': monthInput.value + '.' +yearInput.value,
+        'Card Expires': monthInput.value + '.' + yearInput.value,
         'CVV': cvv.value
     }
 
