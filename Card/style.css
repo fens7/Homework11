@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+.window{
+    min-height: 100vh;
+    background: radial-gradient(circle, rgb(48, 137, 179) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+
+.window form{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 30px;
+    width: 520px;
+    padding-top: 160px;
+}
+
+.window form .inputBox{
+    margin-top: 20px;
+}
+
+.window form .inputBox span{
+    display: block;
+    color:rgb(0, 0, 0);
+    padding-bottom: 5px;
+    
+}
+
+.window form .inputBox input,
+.window form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0, 0.435);
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+
+}
+
+.inputBox input, .card-holder-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.inputBox span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.inputBox .cvv-input {
+    font-weight: 600;
+    font-size: 14px;
+    padding: 100px 0;
+}
+
+.window form .flexbox{
+    display: flex;
+    gap: 20px;
+}
+
+.window form .flexbox .inputBox{
+    flex:1 1 150px;
+}
+
+.window form .flexbox .inputBox input {
+    padding: 11px ;
+}
+
+.window form .submit-btn{
+    width: 100%;
+    background: #000;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.window form .submit-btn:hover{
+    background-color: rgb(48, 137, 179);
+}
+
+.window .card{
+    background-image: url(./image/bg1.jpg);
+    border-radius: 20px;
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+.window .card .container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0; 
+    left: 0;
+    /* background: linear-gradient(133deg, rgb(255, 9, 9) 0%,rgb(252, 209, 70)); */
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.509);
+    padding:20px;
+}
+
+.window .card .container .image{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.window .card .container .card-number-box__container .card-number-box{
+    display: flex;
+
+}
+
+.window .card .container .image img{
+    height: 50px;
+}
+
+.window .card .container .card-number-box__container{
+    font-size: 26px;
+    padding: 30px 0;
+    color:#fff;
+    margin: 10px 0;
+}
+
+.window .card .container .card-number-box__container .card-number-box p {
+    padding: 0 6px;
+    font-weight: 500;
+}
+
+.window .card .container .flexbox{
+    display: flex;
+}
+
+.window .card .container .flexbox .box:nth-child(1){
+    margin-right: auto;
+}
+
+.window .card .container .flexbox .box{
+    font-size: 15px;
+    color:#fff;
+}
+
+.box:first-child span {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.span-expiration {
+    font-weight: 300;
+    font-size: 12px;
+}
